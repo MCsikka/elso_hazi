@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+        <title>Juhuuu</title>
+        <style>
+            #cim, #sajnalom {
+                background-color: rgb(30, 128, 44);
+                margin: 0;
+            }
+            .kepdoboz {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            #kepdoboz_en {
+                height: 300px;
+            }
+            #kepdoboz_o {
+                height: 200px;
+            }
+            .kepdoboz > img {
+                height: 90%;
+                border: 10px double rgb(30, 128, 44);
+            }
+            body{
+                background-color: rgb(137, 185, 89);
+            }
+            #szovegek {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            }
+            h2 {
+                text-align: center;
+
+            }
+            @keyframes dino_megy {
+                from {right: -200px;}
+                to {right: calc(100% + 200px);}
+            }
+            #dino {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                right: -200px;
+                animation-name: dino_megy;
+                animation-duration: 10s;
+                animation-iteration-count: 5;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 id="cim" style="text-align: center;">
+            Magyar Franciska
+        </h1>
+        <div id="kepdoboz_en" class="kepdoboz">
+            <img src="kepek/en.jpg" alt="Kép rólam">
+        </div>
+        <div id="szovegek">
+            <div>
+                <h2>Jelentéktelen információk:</h2>
+                <ol>
+                    <li>21 éves vagyok</li>
+                    <li>Nem tudok programozni</li>
+                    <li>Nem a zöld a kedvenc színem</li>
+                    <li>Vegetáriánus vagyok</li>
+                    <li>Szeretem a cápákat de a dínókat jobban</li>
+                    <li>Tütürü-türütütűűűűű</li>
+                    <li>Van egy corgim!</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Hobbik:</h2>
+                <ol>
+                    <li>Írás</li>
+                    <li>Olvasás</li>
+                    <li>Festés/rajzolás</li>
+                    <li>Futás</li>
+                    <li>Kutyasétáltatás</li>
+                    <li>Dinós játék</li>
+                    <li>Mások ideesítése</li>
+                </ol>
+            </div>
+            <div>
+                <h2>Képességek:</h2>
+                <ol>
+                    <li>Írás</li>
+                    <li>Olvasás</li>
+                    <li>Festés/rajzolás</li>
+                    <li>Fejlett kommunikációs késségek</li>
+                    <li>Jó megfigyelő</li>
+                    <li>Szociális hatékonyság</li>
+                    <li>Kitartás</li>
+                </ol>
+            </div>
+        </div>
+        <div id="kepdoboz_o" class="kepdoboz">
+            <img src="kepek/o.jpg" alt="Kép róla">
+        </div>
+        <h1 id="sajnalom" style="text-align: center;">
+            Sajnálom, hogy ezt végig kellett nézned
+        </h1>
+        <img id="dino" src="kepek/dino.webp" alt="Tütürü-türütütűűűűű">
+    </body>
+</html>
